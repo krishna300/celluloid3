@@ -1,2 +1,6 @@
-# celluloid3
-My Learning files in PC
+install requirements:
+pip install -r requirements.txt
+
+user::
+alpha
+beta
