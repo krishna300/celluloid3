@@ -1,0 +1,20 @@
+
+
+
+
+
+{% extends "myapi/base.html" %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+    
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    
+        {{ form|crispy }}
+    <div class="form-group">
+        <button class="btn btn-outline-info" type="submit">Post</button>
+    </div>
+
+{% endblock content %}
